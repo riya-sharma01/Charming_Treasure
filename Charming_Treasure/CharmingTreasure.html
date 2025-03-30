@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charming Treasure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Charming Treasure</div>
+        <input type="text" placeholder="Search for products" class="search-bar">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Cart <span id="cart-count">0</span></a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <img src="banner.jpg" alt="Sale Banner">
+        </section>
+
+        <section class="categories">
+            <h2>Shop by Categories</h2>
+            <div class="category-list">
+                <div class="category-item">Clothes</div>
+                <div class="category-item">Shoes</div>
+                <div class="category-item">Accessories</div>
+                <div class="category-item">Beauty Products</div>
+                <div class="category-item">Home Decor</div>
+                <div class="category-item">Electronics</div>
+            </div>
+        </section>
+
+        <section class="products">
+            <h2>Featured Products</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="clothes.jpg" alt="Clothes">
+                    <p>Stylish Outfit - $49</p>
+                    <button class="add-to-cart" data-name="Stylish Outfit" data-price="49">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="shoes.jpg" alt="Shoes">
+                    <p>Trendy Sneakers - $79</p>
+                    <button class="add-to-cart" data-name="Trendy Sneakers" data-price="79">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="accessories.jpg" alt="Accessories">
+                    <p>Elegant Necklace - $29</p>
+                    <button class="add-to-cart" data-name="Elegant Necklace" data-price="29">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="beauty.jpg" alt="Beauty">
+                    <p>Luxury Skincare - $59</p>
+                    <button class="add-to-cart" data-name="Luxury Skincare" data-price="59">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+            <button id="checkout">Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Charming Treasure. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
